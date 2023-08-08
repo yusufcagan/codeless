@@ -4,173 +4,34 @@ import { bootstrap } from "../constStyle/styles";
 
 const data = [
   {
-    id: "3 COLUMNS",
+    id: "top1",
     content: {
-      label: "3 COLUMNS",
-      class: "test",
-      content: `<div
-    style="
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    min-height: 200px;
-    padding: 10px;"
->
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      height: 200px;
-
-    "
-  ></div>
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      height: 200px;
-    "
-  ></div>
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      height: 200px;
-    "
-  ></div>
-</div>`,
-    },
-  },
-  {
-    id: "2 COLUMNS",
-    content: {
-      label: "2 COLUMNS",
-      content: `<div
-    style="
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    min-height: 200px;
-    padding: 10px;"
->
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      height: 200px;
-
-    "
-  ></div>
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      height: 200px;
-    "
-  ></div>
-
-</div>`,
-    },
-  },
-  {
-    id: "1 COLUMNS",
-    content: {
-      label: "1 COLUMNS",
-      content: `<h2>Login Form</h2>
-
-      <div class="mobile-header bg-white section d-xl-none">
+      label: "Top Bar 1",
+      category: "TopBar",
+      content: `<div class="topbar-section section bg-primary2">
       <div class="container">
-          <div class="row align-items-center">
-
-              <!-- Header Logo Start -->
-              <div class="col">
-                  <div class="header-logo">
-                      <a href="index.html"><img src="assets/images/logo/logo-2.webp" alt="Learts Logo"></a>
+          <div class="row justify-content-between align-items-center">
+              <div class="col-md-auto col-12">
+                  <p class="text-white text-center text-md-left my-2">Free shipping for orders over $59 !</p>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                  <div class="topbar-menu">
+                      <ul>
+                          <li><a href="#" class="text-white"><i class="fa fa-map-marker-alt"></i>Store Location</a></li>
+                          <li><a href="#" class="text-white"><i class="fa fa-truck"></i>Order Status</a></li>
+                      </ul>
                   </div>
               </div>
-              <!-- Header Logo End -->
-
-              <!-- Header Tools Start -->
-              <div class="col-auto">
-                  <div class="header-tools justify-content-end">
-                      <div class="header-login d-none d-sm-block">
-                          <a href="my-account.html"><i class="far fa-user"></i></a>
-                      </div>
-                      <div class="header-search d-none d-sm-block">
-                          <a href="#offcanvas-search" class="offcanvas-toggle"><i class="fas fa-search"></i></a>
-                      </div>
-                      <div class="header-wishlist d-none d-sm-block">
-                          <a href="#offcanvas-wishlist" class="offcanvas-toggle"><span class="wishlist-count">3</span><i class="far fa-heart"></i></a>
-                      </div>
-                      <div class="header-cart">
-                          <a href="#offcanvas-cart" class="offcanvas-toggle"><span class="cart-count">3</span><i class="fas fa-shopping-cart"></i></a>
-                      </div>
-                      <div class="mobile-menu-toggle">
-                          <a href="#offcanvas-mobile-menu" class="offcanvas-toggle">
-                              <svg viewBox="0 0 800 600">
-                                  <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" class="top"></path>
-                                  <path d="M300,320 L540,320" class="middle"></path>
-                                  <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" class="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-                              </svg>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Header Tools End -->
-
           </div>
       </div>
   </div>`,
     },
   },
   {
-    id: "Input",
+    id: "Header1",
     content: {
-      label: "Input",
-      content: `<div class="row g-0">
-      <div class="col-lg-6">
-          <div class="user-login-register bg-light">
-              <div class="login-register-title">
-                  <h2 class="title">Login</h2>
-                  <p class="desc">Great to have you back!</p>
-              </div>
-              <div class="login-register-form">
-                  <form action="#">
-                      <div class="row learts-mb-n50">
-                          <div class="col-12 learts-mb-50">
-                              <input type="email" placeholder="Username or email address">
-                          </div>
-                          <div class="col-12 learts-mb-50">
-                              <input type="password" placeholder="Password">
-                          </div>
-                          <div class="col-12 text-center learts-mb-50">
-                              <button class="btn btn-dark btn-outline-hover-dark">login</button>
-                          </div>
-                          <div class="col-12 learts-mb-50">
-                              <div class="row learts-mb-n20">
-                                  <div class="col-12 learts-mb-20">
-                                      <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="rememberMe">
-                                          <label class="form-check-label" for="rememberMe">Remember me</label>
-                                      </div>
-                                  </div>
-                                  <div class="col-12 learts-mb-20">
-                                      <a href="lost-password.html" class="fw-400">Lost your password?</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-    </div>`,
-    },
-  },
-  {
-    id: "button",
-    content: {
-      label: "button",
+      label: "Header 1",
+      category: "Header",
       content: `    <div class="header-section section bg-white d-none d-xl-block">
       <div class="container">
           <div class="row row-cols-lg-3 align-items-center">
@@ -404,30 +265,6 @@ const data = [
           </div>
       </div>
       <!-- Site Menu Section End -->
-
-  </div>`,
-    },
-  },
-  {
-    id: "text-area",
-    content: {
-      label: "text-area",
-      content: `<div class="topbar-section section bg-primary2">
-      <div class="container">
-          <div class="row justify-content-between align-items-center">
-              <div class="col-md-auto col-12">
-                  <p class="text-white text-center text-md-left my-2">Free shipping for orders over $59 !</p>
-              </div>
-              <div class="col-auto d-none d-md-block">
-                  <div class="topbar-menu">
-                      <ul>
-                          <li><a href="#" class="text-white"><i class="fa fa-map-marker-alt"></i>Store Location</a></li>
-                          <li><a href="#" class="text-white"><i class="fa fa-truck"></i>Order Status</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
   </div>`,
     },
   },
@@ -437,7 +274,7 @@ export default function DefaultEditor() {
   const onEditor = (editor) => {
     console.log("Editor loaded", { editor });
     data.forEach((value) => {
-      editor.Blocks.add(value.id, value.content);
+      editor.BlockManager.add(value.id, value.content);
     });
     editor.setStyle(bootstrap);
   };
